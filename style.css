@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700; 
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400; 
+}
+
+:root {
+    --cl-white: hsl(0, 0%, 100%);
+    --cl-stone-100: hsl(30, 54%, 90%);
+    --cl-stone-150: hsl(30, 18%, 87%);
+    --cl-stone-600: hsl(30, 10%, 34%);
+    --cl-stone-900: hsl(24, 5%, 18%);
+    --cl-brown-800: hsl(14, 45%, 36%);
+    --cl-rose-800: hsl(332, 51%, 32%);
+    --cl-rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    font-family: 'Outfit';
+    font-weight: 400;
+    color: var(--cl-stone-600);
+}
