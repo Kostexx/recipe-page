@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Outfit';
     src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400 700; 
+    font-weight: 400 600 700; 
 }
 
 @font-face {
@@ -22,7 +22,130 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
     font-family: 'Outfit';
     font-weight: 400;
+    line-height: 1.5;
     color: var(--cl-stone-600);
+    background-color: var(--cl-stone-100);
+}
+
+.recipe-card {
+    box-sizing: border-box;
+    margin: clamp(10px, 20%, 100px);
+    width: clamp(0px, 90%, 700px);
+    padding: clamp(1rem, 4%, 2rem);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cl-white);
+    border-radius: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0 1.4rem 0;
+    background-color: var(--cl-stone-150);
+}
+
+img {
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    color: var(--cl-stone-900);
+    margin: 2rem 0 0 0;
+}
+
+h2 {
+    font-family: 'Young Serif';
+    color: var(--cl-brown-800);
+    margin: 1rem 0 0 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+
+ul li::before {
+    content: '•';
+    color: var(--cl-rose-800);
+    font-weight: 600;
+    padding: 0 1.5rem 0 0.5rem;
+}
+
+.ing li::before {
+    content: '•';
+    color: var(--cl-brown-800);
+}
+
+ol {
+    list-style: none;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    line-height: 2;
+}
+
+ol li {
+    position: relative;
+    counter-increment: list;
+    padding-left: 2.5rem;
+}
+
+ol li::before {
+    content: counter(list) '.';
+    position: absolute;
+    left: 0;
+    padding: 0 0 0 0.5rem;
+    color: var(--cl-brown-800);
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: var(--cl-stone-100);
+}
+
+.prep {
+    background-color: var(--cl-rose-50);
+    padding: 1.2rem 1rem 0.2rem 1.6rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.prep-time {
+    font-family: 'Outfit';
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--cl-rose-800);
+}
+
+table {
+    border-spacing: 0;
+  }
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1.5rem;
+}
+
+.cal-value {
+    color: var(--cl-brown-800);
+}
+
+.td-last {
+    border-bottom: none;
 }
