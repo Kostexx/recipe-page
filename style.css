@@ -121,6 +121,7 @@ hr {
 }
 
 .prep {
+    overflow: hidden;
     background-color: var(--cl-rose-50);
     padding: 1.2rem 1rem 0.2rem 1.6rem;
     margin: 1rem 0;
