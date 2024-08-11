@@ -6,7 +6,3 @@ tl.from(".group1 h2", {x:150})
 tl.from(".group1 li", {x:150, stagger:0.2})
 tl.from(".group2 h2", {x:150})
 tl.from(".group2 li", {x:150, stagger:0.2})
-
-
-
-// GSDevTools.create();
